@@ -67,7 +67,7 @@ class FileStorage:
 
     def get(self, cls, id):
         """ A method to retrieve one object """
-        key = {}.{}.format(cls, id)
+        key = '{}.{}'.format(cls, id)
         if key in self.__objects.keys():
             return self.__objects[key]
         return None
